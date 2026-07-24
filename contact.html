@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Hamza Web Solutions</title>
+  <meta name="description"
+    content="Ready to elevate your digital presence? Reach out and let's talk about your project." />
+  <link rel="icon" href="favicon/favicon.ico" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
+  <style>
+    .page-hero {
+      padding: 8rem 0 5rem;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-heading {
+      font-size: clamp(2rem, 5vw, 3.75rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -.03em;
+      color: var(--fg);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-intro {
+      font-size: 1.125rem;
+      color: var(--muted-fg);
+      margin-bottom: 3rem;
+      max-width: 24rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-glow"></div>
+    <img class="loader-logo site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+    <p class="loader-name">Hamza Web Solutions</p>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a class="brand" href="index.html">
+          <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+          <span>Hamza Web Solutions</span>
+        </a>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="process.html">Process</a></li>
+          <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <button id="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div id="mobile-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="process.html">Process</a>
+        <a class="nav-link" href="testimonials.html">Testimonials</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-hero">
+      <!-- Background blobs -->
+      <div class="blob-primary" style="top:20%;right:10%;width:500px;height:500px;"></div>
+      <div class="blob-secondary" style="bottom:10%;left:10%;width:400px;height:400px;"></div>
+
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left — info -->
+          <div style="display:flex;flex-direction:column;justify-content:center;" class="reveal-left">
+            <h1 class="contact-heading">
+              Let's build something <span class="text-gradient">great together.</span>
+            </h1>
+            <p class="contact-intro">Ready to elevate your digital presence? Reach out and let's talk about your
+              project.</p>
+
+            <!-- Contact info items -->
+            <div style="margin-bottom:2.5rem;">
+              <div class="contact-info-item">
+                <div class="contact-icon primary"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h3>Email</h3>
+                  <a href="mailto:hamzahasan.dev@gmail.com">hamzahasan.dev@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon secondary"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <h3>WhatsApp</h3>
+                  <a href="https://wa.me/923343368489" target="_blank" rel="noopener">+92 334 336 8489</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon accent"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h3>Location</h3>
+                  <p>Karachi, Pakistan</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social links -->
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/m-hamza-hasan/" target="_blank" rel="noopener" aria-label="LinkedIn"
+                class="contact-social-btn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/hamzahasan-webdev" target="_blank" rel="noopener" aria-label="GitHub"
+                class="contact-social-btn">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right — form -->
+          <div class="reveal-right" style="--delay:.2s">
+            <div class="contact-form-wrap">
+
+              <!-- Success overlay -->
+              <div class="form-success" id="form-success">
+                <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <h3>Message Sent!</h3>
+                <p>Thanks for reaching out. I'll get back to you as soon as possible.</p>
+                <button id="form-reset">Send another message</button>
+              </div>
+
+              <!-- Form -->
+              <form id="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="business">Business Name <span
+                      style="color:var(--muted-fg);font-weight:400;">(Optional)</span></label>
+                  <input type="text" id="business" name="business" placeholder="Your Company" />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Project Details</label>
+                  <textarea id="message" name="message" rows="5" required
+                    placeholder="Tell me about your project, timeline, and goals..."></textarea>
+                </div>
+
+                <button class="btn-submit" type="submit" id="form-submit">
+                  <span id="submit-text">Send Message &nbsp;<i class="fa-solid fa-paper-plane"></i></span>
+                  <span class="spinner" id="submit-spinner" style="display:none;"></span>
+                </button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-glow-top"></div>
+    <div class="footer-glow-line"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="footer-brand-logo" href="index.html">
+            <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+            <span>Hamza Web Solutions</span>
+          </a>
+          <p style="font-size:.875rem;color:var(--muted-fg);margin-bottom:1.5rem;max-width:18rem;">Building fast, modern
+            websites that help businesses establish a professional online presence.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/hamzahasan-webdev" target="_blank" rel="noopener" aria-label="GitHub"
+              class="footer-social-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/m-hamza-hasan/" target="_blank" rel="noopener" aria-label="LinkedIn"
+              class="footer-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:hamzahasan.dev@gmail.com" aria-label="Email" class="footer-social-btn"><i
+                class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html"><span class="link-dash"></span>Home</a></li>
+            <li><a href="about.html"><span class="link-dash"></span>About</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Services</a></li>
+            <li><a href="portfolio.html"><span class="link-dash"></span>Portfolio</a></li>
+            <li><a href="process.html"><span class="link-dash"></span>Process</a></li>
+            <li><a href="testimonials.html"><span class="link-dash"></span>Testimonials</a></li>
+            <li><a href="contact.html"><span class="link-dash"></span>Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html"><span class="link-dash"></span>Custom Website Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>WordPress Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>UI/UX Design</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Business Websites</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Landing Pages</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Website Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li><a href="mailto:hamzahasan.dev@gmail.com"><i class="fa-solid fa-envelope"
+                  style="color:var(--primary);font-size:.875rem;"></i>&nbsp; hamzahasan.dev@gmail.com</a></li>
+            <li><a href="https://wa.me/923343368489" target="_blank" rel="noopener"><span
+                  style="color:var(--primary);font-size:.75rem;font-weight:700;">WA</span>&nbsp; +92 334 336 8489</a>
+            </li>
+            <li><span style="font-size:.875rem;color:var(--muted-fg);">Karachi, Pakistan</span></li>
+            <li style="margin-top:.5rem;"><a href="contact.html"
+                style="display:inline-block;padding:.625rem 1.25rem;border-radius:.375rem;background:rgba(99,102,241,.1);color:var(--primary);font-size:.875rem;font-weight:500;text-decoration:none;border:1px solid rgba(99,102,241,.2);">Start
+                a project →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="yr"></span> Hamza Web Solutions. All rights reserved.</p>
+        <p>Designed &amp; built by Muhammad Hamza Hasan</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js?v=2"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

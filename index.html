@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamza Web Solutions — Premium Web Development Studio</title>
+  <meta name="description"
+    content="Muhammad Hamza Hasan — I specialize in creating fast, modern websites with premium UI, responsive design, and thoughtful user experiences." />
+  <link rel="icon" href="favicon/favicon.ico" type="image/svg+xml" />
+
+  <!-- Fonts + Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=4" />
+
+  <style>
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 7rem 0 4rem;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media(min-width:1024px) {
+      .hero-grid {
+        grid-template-columns: 7fr 5fr;
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .375rem .75rem;
+      border-radius: 9999px;
+      font-size: .75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted-fg);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-badge .pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      50% {
+        opacity: .6;
+        transform: scale(.9)
+      }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -.03em;
+      color: var(--fg);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--muted-fg);
+      max-width: 42rem;
+      line-height: 1.8;
+    }
+@media(max-width: 1023px) {
+  #badage-text{
+    font-size: 0.8rem;
+  }
+}
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media(min-width:640px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media(min-width:1024px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .services-preview {
+      padding: 6rem 0 8rem;
+    }
+
+    .services-preview-header {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    @media(min-width:768px) {
+      .services-preview-header {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+    }
+
+    .services-preview-header div {
+      max-width: 32rem;
+    }
+
+    .services-preview-header h2 {
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 1rem;
+    }
+
+    .services-preview-header p {
+      color: var(--muted-fg);
+      font-size: 1.125rem;
+    }
+
+    .services-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--primary);
+      font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color .2s;
+    }
+
+    .services-link:hover {
+      color: var(--secondary);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-glow"></div>
+    <img class="loader-logo site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+    <p class="loader-name">Hamza Web Solutions</p>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a class="brand" href="index.html">
+          <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+          <span>Hamza Web Solutions</span>
+        </a>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="process.html">Process</a></li>
+          <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <button id="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div id="mobile-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="process.html">Process</a>
+        <a class="nav-link" href="testimonials.html">Testimonials</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <!-- Background blobs -->
+      <div class="blob-primary" style="top:20%;left:10%;width:500px;height:500px;"></div>
+      <div class="blob-secondary" style="bottom:20%;right:10%;width:400px;height:400px;"></div>
+      <div class="blob-accent"
+        style="top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg);width:800px;height:300px;"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left — copy -->
+          <div>
+            <div class="glass hero-badge hero-in-1">
+              <span class="pulse"></span>
+              Premium Web Development Studio
+            </div>
+            <h1 class="hero-in-2">
+              Building digital experiences that
+              <span class="text-gradient">help businesses grow.</span>
+            </h1>
+            <p class="hero-in-3">
+              I'm Muhammad Hamza Hasan — I specialize in creating fast, modern websites with premium UI, responsive
+              design, and thoughtful user experiences tailored to business goals.
+            </p>
+            <div class="hero-btns hero-in-4">
+              <a href="contact.html" class="btn-primary">
+                <div class="btn-overlay"></div>
+                <span>Start Your Project</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="portfolio.html" class="btn-outline">
+                <span>View Portfolio</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right — photo -->
+          <div style="display:flex;justify-content:center;" class="hero-in-5">
+            <div class="hero-photo-wrap">
+              <div class="hero-photo-border"></div>
+              <div class="hero-photo-inner">
+                <img src="assets/images/founder.jpg" alt="Muhammad Hamza Hasan — Founder & Lead Web Developer"
+                  loading="eager" />
+                <div class="photo-gradient"></div>
+                <div class="photo-card">
+                  <p>Muhammad Hamza Hasan</p>
+                  <p>Founder & Lead Web Developer</p>
+                </div>
+              </div>
+
+              <!-- Floating badge 1 -->
+              <div class="hero-badge-1 hero-float-1">
+                <div class="badge-icon primary"><i class="fa-solid fa-code"></i></div>
+                <p id="badage-text">Clean Code</p>
+              </div>
+              <!-- Floating badge 2 -->
+              <div class="hero-badge-2 hero-float-2">
+                <div class="badge-icon accent"><i class="fa-solid fa-bolt"></i></div>
+                <p id="badage-text">Fast Performance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-row">
+      <div class="container">
+        <div class="stats-inner">
+          <div class="stat-item">
+            <h3><span data-count="10" data-suffix="+">0+</span></h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <h3><span data-count="7">0</span></h3>
+            <p>Industries Served</p>
+          </div>
+          <div class="stat-item">
+            <h3><span data-count="3" data-suffix="+">0+</span></h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="services-preview">
+      <div class="container">
+        <div class="services-preview-header">
+          <div>
+            <h2 class="reveal">Crafting digital excellence</h2>
+            <p class="reveal reveal-delay-1">Comprehensive web solutions tailored to your business needs, built with
+              modern technologies and an eye for detail.</p>
+          </div>
+          <a href="services.html" class="services-link reveal reveal-delay-2">
+            View all services <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal reveal-delay-1">
+            <div class="card-glow"></div>
+            <div class="service-icon" style="color:var(--primary)"><i class="fa-solid fa-display"></i></div>
+            <h3>Custom Website Development</h3>
+            <p>Tailored, responsive websites built from scratch — fast, clean, and designed to represent your business
+              professionally.</p>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="card-glow"></div>
+            <div class="service-icon" style="color:var(--secondary)"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Beautiful, intuitive interfaces that put the user first — designed to engage visitors and convert them
+              into customers.</p>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <div class="card-glow"></div>
+            <div class="service-icon" style="color:var(--accent)"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Website Optimization</h3>
+            <p>Speed, performance, and SEO improvements that make your site rank higher and load faster on every device.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-bg"></div>
+      <div class="cta-glow"></div>
+      <div class="container">
+        <div class="cta-inner">
+          <h2 class="reveal">Ready to elevate your online presence?</h2>
+          <p class="reveal reveal-delay-1">Let's collaborate to build a digital experience that stands out and drives
+            results for your business.</p>
+          <a href="contact.html" class="btn-primary reveal reveal-delay-2" style="display:inline-flex;">
+            <div class="btn-overlay"></div>
+            <span>Start a Conversation</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-glow-top"></div>
+    <div class="footer-glow-line"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="footer-brand-logo" href="index.html">
+            <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+            <span>Hamza Web Solutions</span>
+          </a>
+          <p style="font-size:.875rem;color:var(--muted-fg);margin-bottom:1.5rem;max-width:18rem;">
+            Building fast, modern websites that help businesses establish a professional online presence.
+          </p>
+          <div class="footer-socials">
+            <a href="https://github.com/hamzahasan-webdev" target="_blank" rel="noopener" aria-label="GitHub"
+              class="footer-social-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/m-hamza-hasan/" target="_blank" rel="noopener" aria-label="LinkedIn"
+              class="footer-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:hamzahasan.dev@gmail.com" aria-label="Email" class="footer-social-btn"><i
+                class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html"><span class="link-dash"></span>Home</a></li>
+            <li><a href="about.html"><span class="link-dash"></span>About</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Services</a></li>
+            <li><a href="portfolio.html"><span class="link-dash"></span>Portfolio</a></li>
+            <li><a href="process.html"><span class="link-dash"></span>Process</a></li>
+            <li><a href="testimonials.html"><span class="link-dash"></span>Testimonials</a></li>
+            <li><a href="contact.html"><span class="link-dash"></span>Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html"><span class="link-dash"></span>Custom Website Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>WordPress Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>UI/UX Design</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Business Websites</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Landing Pages</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Website Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li><a href="mailto:hamzahasan.dev@gmail.com"><i class="fa-solid fa-envelope"
+                  style="color:var(--primary);font-size:.875rem;"></i>&nbsp; hamzahasan.dev@gmail.com</a></li>
+            <li><a href="https://wa.me/923343368489" target="_blank" rel="noopener"><span
+                  style="color:var(--primary);font-size:.75rem;font-weight:700;">WA</span>&nbsp; +92 334 336 8489</a>
+            </li>
+            <li><span style="font-size:.875rem;color:var(--muted-fg);">Karachi, Pakistan</span></li>
+            <li style="margin-top:.5rem;">
+              <a href="contact.html"
+                style="display:inline-block;padding:.625rem 1.25rem;border-radius:.375rem;background:rgba(99,102,241,.1);color:var(--primary);font-size:.875rem;font-weight:500;text-decoration:none;border:1px solid rgba(99,102,241,.2);transition:background .2s,color .2s;">Start
+                a project →</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="yr"></span> Hamza Web Solutions. All rights reserved.</p>
+        <p>Designed &amp; built by Muhammad Hamza Hasan</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lenis -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

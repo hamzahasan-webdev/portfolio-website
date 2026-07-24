@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Hamza Web Solutions</title>
+  <meta name="description"
+    content="Modern website development services — custom sites, WordPress, UI/UX design, landing pages, and optimization." />
+  <link rel="icon" href="favicon/favicon.ico" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
+  <style>
+    .page-hero {
+      padding: 8rem 0 5rem;
+    }
+
+    .services-full-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    @media(min-width:768px) {
+      .services-full-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media(min-width:1024px) {
+      .services-full-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-glow"></div>
+    <img class="loader-logo site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+    <p class="loader-name">Hamza Web Solutions</p>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a class="brand" href="index.html">
+          <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+          <span>Hamza Web Solutions</span>
+        </a>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="process.html">Process</a></li>
+          <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <button id="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div id="mobile-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="process.html">Process</a>
+        <a class="nav-link" href="testimonials.html">Testimonials</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+
+        <div class="section-header" style="margin-bottom:5rem;">
+          <h1 class="hero-in-1">What I <span class="text-gradient">Offer</span></h1>
+          <p class="hero-in-2">Modern websites designed for speed, performance, and business growth — built with care
+            from concept to launch.</p>
+        </div>
+
+        <div class="services-full-grid">
+          <div class="service-card reveal reveal-delay-1">
+            <div class="card-glow"></div>
+            <div class="service-icon" style="color:var(--primary)"><i class="fa-solid fa-code"></i></div>
+            <h3>Custom Website Development</h3>
+            <p>Fully custom-coded, responsive websites built from scratch. Every site I build is fast, clean, and
+              tailored to represent your business exactly the way you envision it.</p>
+            <ul class="service-features">
+              <li>Hand-coded for performance</li>
+              <li>Fully responsive across all devices</li>
+              <li>SEO-ready structure</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal reveal-delay-2">
+            <div class="card-glow"></div>
+            <div class="service-icon" style="color:var(--accent)"><i class="fa-brands fa-wordpress"></i></div>
+            <h3>WordPress Website Development</h3>
+            <p>Professional business websites built on WordPress — easy for you to manage, powerful enough to grow with
+              your business, and designed to look exceptional.</p>
+            <ul class="service-features">
+              <li>Custom theme development</li>
+              <li>Plugin setup &amp; integration</li>
+              <li>Easy content management</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal reveal-delay-3">
+            <div class="card-glow"></div>
+            <div class="service-icon" style="color:var(--secondary)"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>UI/UX Design &amp; Modern Web Interfaces</h3>
+            <p>Beautiful, user-centric interfaces designed in Figma and brought to life in code. Purposeful design that
+              guides visitors and drives action.</p>
+            <ul class="service-features">
+              <li>Figma-based design process</li>
+              <li>Conversion-focused layouts</li>
+              <li>Consistent design systems</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal reveal-delay-1">
+            <div class="card-glow"></div>
+            <div class="service-icon" style="color:#34d399"><i class="fa-solid fa-globe"></i></div>
+            <h3>Business &amp; Industry-Specific Websites</h3>
+            <p>Websites built specifically for your industry — whether it's hospitality, healthcare, real estate,
+              fitness, or more. Purpose-built, not generic.</p>
+            <ul class="service-features">
+              <li>Industry-tailored layouts</li>
+              <li>Sector-specific features</li>
+              <li>7+ industries served</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal reveal-delay-2">
+            <div class="card-glow"></div>
+            <div class="service-icon" style="color:#fb923c"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Landing Pages &amp; Conversion-Focused Designs</h3>
+            <p>High-converting landing pages built for marketing campaigns, product launches, or lead generation —
+              designed to turn visitors into customers.</p>
+            <ul class="service-features">
+              <li>Clear call-to-action design</li>
+              <li>Fast load times</li>
+              <li>Campaign-ready structure</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal reveal-delay-3">
+            <div class="card-glow"></div>
+            <div class="service-icon" style="color:#f472b6"><i class="fa-solid fa-wrench"></i></div>
+            <h3>Website Optimization &amp; Maintenance</h3>
+            <p>Speed improvements, performance audits, bug fixes, and ongoing updates to keep your website running at
+              its best long after launch.</p>
+            <ul class="service-features">
+              <li>Core Web Vitals improvement</li>
+              <li>Image &amp; asset optimization</li>
+              <li>Ongoing support &amp; updates</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CTA box -->
+        <div class="glass services-cta-box reveal">
+          <div class="cta-glow-inner"></div>
+          <div style="position:relative;z-index:1;">
+            <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:var(--fg);margin-bottom:1rem;">Have a
+              project in mind?</h2>
+            <p style="color:var(--muted-fg);margin-bottom:2rem;max-width:28rem;margin-left:auto;margin-right:auto;">
+              Let's talk about what you need. I'll give you an honest assessment and a clear plan — no fluff, no
+              pressure.</p>
+            <a href="contact.html" class="btn-primary" style="display:inline-flex;">
+              <div class="btn-overlay"></div>
+              <span>Get in Touch</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-glow-top"></div>
+    <div class="footer-glow-line"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="footer-brand-logo" href="index.html">
+            <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+            <span>Hamza Web Solutions</span>
+          </a>
+          <p style="font-size:.875rem;color:var(--muted-fg);margin-bottom:1.5rem;max-width:18rem;">Building fast, modern
+            websites that help businesses establish a professional online presence.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/hamzahasan-webdev" target="_blank" rel="noopener" aria-label="GitHub"
+              class="footer-social-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/m-hamza-hasan/" target="_blank" rel="noopener" aria-label="LinkedIn"
+              class="footer-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:hamzahasan.dev@gmail.com" aria-label="Email" class="footer-social-btn"><i
+                class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html"><span class="link-dash"></span>Home</a></li>
+            <li><a href="about.html"><span class="link-dash"></span>About</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Services</a></li>
+            <li><a href="portfolio.html"><span class="link-dash"></span>Portfolio</a></li>
+            <li><a href="process.html"><span class="link-dash"></span>Process</a></li>
+            <li><a href="testimonials.html"><span class="link-dash"></span>Testimonials</a></li>
+            <li><a href="contact.html"><span class="link-dash"></span>Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html"><span class="link-dash"></span>Custom Website Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>WordPress Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>UI/UX Design</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Business Websites</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Landing Pages</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Website Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li><a href="mailto:hamzahasan.dev@gmail.com"><i class="fa-solid fa-envelope"
+                  style="color:var(--primary);font-size:.875rem;"></i>&nbsp; hamzahasan.dev@gmail.com</a></li>
+            <li><a href="https://wa.me/923343368489" target="_blank" rel="noopener"><span
+                  style="color:var(--primary);font-size:.75rem;font-weight:700;">WA</span>&nbsp; +92 334 336 8489</a>
+            </li>
+            <li><span style="font-size:.875rem;color:var(--muted-fg);">Karachi, Pakistan</span></li>
+            <li style="margin-top:.5rem;"><a href="contact.html"
+                style="display:inline-block;padding:.625rem 1.25rem;border-radius:.375rem;background:rgba(99,102,241,.1);color:var(--primary);font-size:.875rem;font-weight:500;text-decoration:none;border:1px solid rgba(99,102,241,.2);">Start
+                a project →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="yr"></span> Hamza Web Solutions. All rights reserved.</p>
+        <p>Designed &amp; built by Muhammad Hamza Hasan</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

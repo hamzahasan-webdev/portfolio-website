@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Process — Hamza Web Solutions</title>
+  <meta name="description"
+    content="A proven 6-step methodology that transforms your idea into a high-performing website — one deliberate step at a time." />
+  <link rel="icon" href="favicon/favicon.ico" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
+  <style>
+    .page-hero {
+      padding: 8rem 0 7rem;
+      min-height: 100vh;
+    }
+
+    .scroll-hint {
+      margin-top: .75rem;
+      font-size: .875rem;
+      color: rgba(197, 208, 224, .4);
+      animation: fadeIn .5s .8s ease-out both;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-glow"></div>
+    <img class="loader-logo site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+    <p class="loader-name">Hamza Web Solutions</p>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a class="brand" href="index.html">
+          <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+          <span>Hamza Web Solutions</span>
+        </a>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="process.html">Process</a></li>
+          <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <button id="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div id="mobile-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="process.html">Process</a>
+        <a class="nav-link" href="testimonials.html">Testimonials</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+
+        <!-- Header -->
+        <div class="section-header" style="margin-bottom:5rem;">
+          <h1 class="hero-in-1">The <span class="text-gradient">Process</span></h1>
+          <p class="hero-in-2">A proven methodology that transforms your idea into a high-performing website — one
+            deliberate step at a time.</p>
+          <p class="scroll-hint hero-in-3">Scroll to progress through each step ↓</p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="process-section" id="process-section">
+
+          <!-- Desktop center line -->
+          <div class="timeline-line" aria-hidden="true">
+            <div class="timeline-fill" id="timeline-fill"></div>
+          </div>
+
+          <!-- Mobile left line -->
+          <div class="timeline-line-mobile" aria-hidden="true">
+            <div class="timeline-fill-mobile" id="timeline-fill-mobile"></div>
+          </div>
+
+          <!-- Steps -->
+          <div class="process-steps">
+
+            <!-- Step 01: Discovery -->
+            <div class="process-step" data-step="0">
+              <!-- Desktop Left -->
+              <div class="step-left">
+                <div style="padding-right:2.5rem;width:100%;display:flex;justify-content:flex-end;">
+                  <div class="step-card active" style="text-align:right;">
+                    <span class="step-label">Step 01</span>
+                    <h3>Discovery</h3>
+                    <p>We start by understanding your business, your target audience, and the unique challenges you want
+                      to solve. This conversation forms the strategic foundation for everything that follows.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Desktop Bullet -->
+              <div class="step-bullet-wrap">
+                <div class="step-bullet active"></div>
+              </div>
+              <!-- Desktop Right (empty for left-side cards) -->
+              <div class="step-right"></div>
+              <!-- Mobile -->
+              <div class="step-mobile">
+                <div class="step-bullet-mobile active"></div>
+                <div class="step-card active">
+                  <span class="step-label">Step 01</span>
+                  <h3>Discovery</h3>
+                  <p>We start by understanding your business, your target audience, and the unique challenges you want
+                    to solve. This conversation forms the strategic foundation for everything that follows.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 02: Planning -->
+            <div class="process-step" data-step="1">
+              <div class="step-left"></div>
+              <div class="step-bullet-wrap">
+                <div class="step-bullet"></div>
+              </div>
+              <div class="step-right">
+                <div style="padding-left:2.5rem;width:100%;display:flex;justify-content:flex-start;">
+                  <div class="step-card">
+                    <span class="step-label">Step 02</span>
+                    <h3>Planning</h3>
+                    <p>A comprehensive project roadmap is created — defining the scope, sitemap, technology choices, and
+                      timeline so you always know what's being built and when.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="step-mobile">
+                <div class="step-bullet-mobile"></div>
+                <div class="step-card">
+                  <span class="step-label">Step 02</span>
+                  <h3>Planning</h3>
+                  <p>A comprehensive project roadmap is created — defining the scope, sitemap, technology choices, and
+                    timeline so you always know what's being built and when.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 03: Design -->
+            <div class="process-step" data-step="2">
+              <div class="step-left">
+                <div style="padding-right:2.5rem;width:100%;display:flex;justify-content:flex-end;">
+                  <div class="step-card" style="text-align:right;">
+                    <span class="step-label">Step 03</span>
+                    <h3>Design</h3>
+                    <p>A premium, user-centric interface is crafted in Figma. Every layout decision is intentional and
+                      rooted in how real users think — guiding visitors from arrival to action.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="step-bullet-wrap">
+                <div class="step-bullet"></div>
+              </div>
+              <div class="step-right"></div>
+              <div class="step-mobile">
+                <div class="step-bullet-mobile"></div>
+                <div class="step-card">
+                  <span class="step-label">Step 03</span>
+                  <h3>Design</h3>
+                  <p>A premium, user-centric interface is crafted in Figma. Every layout decision is intentional and
+                    rooted in how real users think — guiding visitors from arrival to action.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 04: Development -->
+            <div class="process-step" data-step="3">
+              <div class="step-left"></div>
+              <div class="step-bullet-wrap">
+                <div class="step-bullet"></div>
+              </div>
+              <div class="step-right">
+                <div style="padding-left:2.5rem;width:100%;display:flex;justify-content:flex-start;">
+                  <div class="step-card">
+                    <span class="step-label">Step 04</span>
+                    <h3>Development</h3>
+                    <p>The approved design is brought to life with clean, performant code. Built mobile-first, optimized
+                      for speed, and structured to be easy for you to manage after handoff.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="step-mobile">
+                <div class="step-bullet-mobile"></div>
+                <div class="step-card">
+                  <span class="step-label">Step 04</span>
+                  <h3>Development</h3>
+                  <p>The approved design is brought to life with clean, performant code. Built mobile-first, optimized
+                    for speed, and structured to be easy for you to manage after handoff.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 05: Testing -->
+            <div class="process-step" data-step="4">
+              <div class="step-left">
+                <div style="padding-right:2.5rem;width:100%;display:flex;justify-content:flex-end;">
+                  <div class="step-card" style="text-align:right;">
+                    <span class="step-label">Step 05</span>
+                    <h3>Testing</h3>
+                    <p>Rigorous testing across devices, browsers, and screen sizes to ensure everything works perfectly.
+                      Performance, accessibility, and cross-browser compatibility are all verified.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="step-bullet-wrap">
+                <div class="step-bullet"></div>
+              </div>
+              <div class="step-right"></div>
+              <div class="step-mobile">
+                <div class="step-bullet-mobile"></div>
+                <div class="step-card">
+                  <span class="step-label">Step 05</span>
+                  <h3>Testing</h3>
+                  <p>Rigorous testing across devices, browsers, and screen sizes to ensure everything works perfectly.
+                    Performance, accessibility, and cross-browser compatibility are all verified.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 06: Launch -->
+            <div class="process-step" data-step="5">
+              <div class="step-left"></div>
+              <div class="step-bullet-wrap">
+                <div class="step-bullet"></div>
+              </div>
+              <div class="step-right">
+                <div style="padding-left:2.5rem;width:100%;display:flex;justify-content:flex-start;">
+                  <div class="step-card">
+                    <span class="step-label">Step 06</span>
+                    <h3>Launch</h3>
+                    <p>Smooth deployment, final performance checks, and a comprehensive handoff so you have full control
+                      over your new digital asset from day one.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="step-mobile">
+                <div class="step-bullet-mobile"></div>
+                <div class="step-card">
+                  <span class="step-label">Step 06</span>
+                  <h3>Launch</h3>
+                  <p>Smooth deployment, final performance checks, and a comprehensive handoff so you have full control
+                    over your new digital asset from day one.</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /process-steps -->
+        </div><!-- /process-section -->
+
+        <!-- Step dots -->
+        <div class="step-dots">
+          <button class="step-dot active" aria-label="Go to step 1"></button>
+          <button class="step-dot" aria-label="Go to step 2"></button>
+          <button class="step-dot" aria-label="Go to step 3"></button>
+          <button class="step-dot" aria-label="Go to step 4"></button>
+          <button class="step-dot" aria-label="Go to step 5"></button>
+          <button class="step-dot" aria-label="Go to step 6"></button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-glow-top"></div>
+    <div class="footer-glow-line"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="footer-brand-logo" href="index.html">
+            <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+            <span>Hamza Web Solutions</span>
+          </a>
+          <p style="font-size:.875rem;color:var(--muted-fg);margin-bottom:1.5rem;max-width:18rem;">Building fast, modern
+            websites that help businesses establish a professional online presence.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/hamzahasan-webdev" target="_blank" rel="noopener" aria-label="GitHub"
+              class="footer-social-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/m-hamza-hasan/" target="_blank" rel="noopener" aria-label="LinkedIn"
+              class="footer-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:hamzahasan.dev@gmail.com" aria-label="Email" class="footer-social-btn"><i
+                class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html"><span class="link-dash"></span>Home</a></li>
+            <li><a href="about.html"><span class="link-dash"></span>About</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Services</a></li>
+            <li><a href="portfolio.html"><span class="link-dash"></span>Portfolio</a></li>
+            <li><a href="process.html"><span class="link-dash"></span>Process</a></li>
+            <li><a href="testimonials.html"><span class="link-dash"></span>Testimonials</a></li>
+            <li><a href="contact.html"><span class="link-dash"></span>Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html"><span class="link-dash"></span>Custom Website Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>WordPress Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>UI/UX Design</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Business Websites</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Landing Pages</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Website Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li><a href="mailto:hamzahasan.dev@gmail.com"><i class="fa-solid fa-envelope"
+                  style="color:var(--primary);font-size:.875rem;"></i>&nbsp; hamzahasan.dev@gmail.com</a></li>
+            <li><a href="https://wa.me/923343368489" target="_blank" rel="noopener"><span
+                  style="color:var(--primary);font-size:.75rem;font-weight:700;">WA</span>&nbsp; +92 334 336 8489</a>
+            </li>
+            <li><span style="font-size:.875rem;color:var(--muted-fg);">Karachi, Pakistan</span></li>
+            <li style="margin-top:.5rem;"><a href="contact.html"
+                style="display:inline-block;padding:.625rem 1.25rem;border-radius:.375rem;background:rgba(99,102,241,.1);color:var(--primary);font-size:.875rem;font-weight:500;text-decoration:none;border:1px solid rgba(99,102,241,.2);">Start
+                a project →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="yr"></span> Hamza Web Solutions. All rights reserved.</p>
+        <p>Designed &amp; built by Muhammad Hamza Hasan</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/process.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

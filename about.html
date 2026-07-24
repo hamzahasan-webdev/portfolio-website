@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Hamza Web Solutions</title>
+  <meta name="description"
+    content="Learn about Muhammad Hamza Hasan — founder of Hamza Web Solutions, premium web developer with 3+ years of experience." />
+  <link rel="icon" href="favicon/favicon.ico" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
+  <style>
+    .page-hero {
+      padding: 8rem 0 5rem;
+    }
+
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-bottom: 8rem;
+    }
+
+    @media(min-width:1024px) {
+      .founder-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .founder-photo-wrap {
+      position: relative;
+    }
+
+    .founder-photo-glow {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(99, 102, 241, .2), transparent);
+      filter: blur(50px);
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .founder-photo-frame {
+      background: rgba(255, 255, 255, .05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 1rem;
+      padding: 8px;
+    }
+
+    .dark .founder-photo-frame {
+      background: rgba(0, 0, 0, .15);
+      border-color: rgba(255, 255, 255, .05);
+    }
+
+    .founder-photo-frame img {
+      width: 100%;
+      border-radius: .75rem;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: filter .5s;
+      display: block;
+    }
+
+    .founder-photo-frame img:hover {
+      filter: grayscale(0%);
+    }
+
+    .founder-info h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: .25rem;
+    }
+
+    .founder-info h3 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    .founder-info .bio {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      color: var(--muted-fg);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .info-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+
+    .skills-section {
+      margin-bottom: 5rem;
+    }
+
+    .skills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .75rem;
+      max-width: 48rem;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-glow"></div>
+    <img class="loader-logo site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+    <p class="loader-name">Hamza Web Solutions</p>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a class="brand" href="index.html">
+          <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+          <span>Hamza Web Solutions</span>
+        </a>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="process.html">Process</a></li>
+          <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <button id="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div id="mobile-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="process.html">Process</a>
+        <a class="nav-link" href="testimonials.html">Testimonials</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+
+        <!-- Header -->
+        <div class="section-header" style="margin-bottom:5rem;">
+          <h1 class="hero-in-1">Behind the <span class="text-gradient">Code</span></h1>
+          <p class="hero-in-2">Hamza Web Solutions is a premium web development studio dedicated to crafting digital
+            experiences that perform seamlessly and look exceptional.</p>
+        </div>
+
+        <!-- Founder -->
+        <div class="founder-grid">
+          <div class="founder-photo-wrap reveal-left">
+            <div class="founder-photo-glow"></div>
+            <div class="founder-photo-frame">
+              <img src="assets/images/founder.jpg" alt="Muhammad Hamza Hasan — Founder & Lead Web Developer" />
+            </div>
+          </div>
+
+          <div class="founder-info reveal-right">
+            <h2>Muhammad Hamza Hasan</h2>
+            <h3>Founder &amp; Lead Web Developer</h3>
+            <div class="bio">
+              <p>I'm Muhammad Hamza Hasan, a web developer and founder of Hamza Web Solutions. I specialize in creating
+                fast, modern websites with premium UI, responsive design, and thoughtful user experiences tailored to
+                business goals.</p>
+              <p>With over 3 years of hands-on experience building across 7+ industries, I understand that a great
+                website isn't just about how it looks — it's about how it performs, how it represents your brand, and
+                how it drives real results for your business.</p>
+              <p>As a one-person studio, every project gets my full, undivided attention from start to finish. You work
+                directly with me — no handoffs, no middlemen, no compromises on quality.</p>
+            </div>
+            <div class="info-badges">
+              <div class="info-badge"><span>Based in: </span><span>Karachi, Pakistan</span></div>
+              <div class="info-badge"><span>Experience: </span><span>3+ Years</span></div>
+              <div class="info-badge"><span>Projects: </span><span>10+ Completed</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-section">
+          <div class="section-header">
+            <h2 class="reveal">Technical Expertise</h2>
+            <p class="reveal reveal-delay-1">The tools and technologies I use to build premium web experiences.</p>
+          </div>
+          <div class="skills-wrap">
+            <span class="skill-tag reveal"
+              style="background:rgba(249,115,22,.1);color:#fb923c;border-color:rgba(249,115,22,.2);"
+              data-delay="0">HTML5</span>
+            <span class="skill-tag reveal reveal-delay-1"
+              style="background:rgba(59,130,246,.1);color:#60a5fa;border-color:rgba(59,130,246,.2);">CSS3</span>
+            <span class="skill-tag reveal reveal-delay-2"
+              style="background:rgba(234,179,8,.1);color:#facc15;border-color:rgba(234,179,8,.2);">JavaScript</span>
+            <span class="skill-tag reveal reveal-delay-3"
+              style="background:rgba(6,182,212,.1);color:#22d3ee;border-color:rgba(6,182,212,.2);">Tailwind CSS</span>
+            <span class="skill-tag reveal reveal-delay-4"
+              style="background:rgba(139,92,246,.1);color:#a78bfa;border-color:rgba(139,92,246,.2);">Bootstrap</span>
+            <span class="skill-tag reveal"
+              style="background:rgba(14,165,233,.1);color:#38bdf8;border-color:rgba(14,165,233,.2);">WordPress</span>
+            <span class="skill-tag reveal reveal-delay-1"
+              style="background:rgba(236,72,153,.1);color:#f472b6;border-color:rgba(236,72,153,.2);">UI/UX Design</span>
+            <span class="skill-tag reveal reveal-delay-2"
+              style="background:rgba(16,185,129,.1);color:#34d399;border-color:rgba(16,185,129,.2);">Responsive
+              Design</span>
+            <span class="skill-tag reveal reveal-delay-3"
+              style="background:rgba(34,197,94,.1);color:#4ade80;border-color:rgba(34,197,94,.2);">Website
+              Optimization</span>
+            <span class="skill-tag reveal reveal-delay-4"
+              style="background:rgba(107,114,128,.1);color:#9ca3af;border-color:rgba(107,114,128,.2);">Git &amp;
+              GitHub</span>
+            <span class="skill-tag reveal"
+              style="background:rgba(167,139,250,.1);color:#c4b5fd;border-color:rgba(167,139,250,.2);">Figma</span>
+            <span class="skill-tag reveal reveal-delay-1"
+              style="background:rgba(99,102,241,.1);color:#818cf8;border-color:rgba(99,102,241,.2);">SEO Basics</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-glow-top"></div>
+    <div class="footer-glow-line"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="footer-brand-logo" href="index.html">
+            <img class="site-logo" src="assets/logo/logo-light.png" alt="Hamza Web Solutions" />
+            <span>Hamza Web Solutions</span>
+          </a>
+          <p style="font-size:.875rem;color:var(--muted-fg);margin-bottom:1.5rem;max-width:18rem;">Building fast, modern
+            websites that help businesses establish a professional online presence.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/hamzahasan-webdev" target="_blank" rel="noopener" aria-label="GitHub"
+              class="footer-social-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/m-hamza-hasan/" target="_blank" rel="noopener" aria-label="LinkedIn"
+              class="footer-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:hamzahasan.dev@gmail.com" aria-label="Email" class="footer-social-btn"><i
+                class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html"><span class="link-dash"></span>Home</a></li>
+            <li><a href="about.html"><span class="link-dash"></span>About</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Services</a></li>
+            <li><a href="portfolio.html"><span class="link-dash"></span>Portfolio</a></li>
+            <li><a href="process.html"><span class="link-dash"></span>Process</a></li>
+            <li><a href="testimonials.html"><span class="link-dash"></span>Testimonials</a></li>
+            <li><a href="contact.html"><span class="link-dash"></span>Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html"><span class="link-dash"></span>Custom Website Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>WordPress Development</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>UI/UX Design</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Business Websites</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Landing Pages</a></li>
+            <li><a href="services.html"><span class="link-dash"></span>Website Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li><a href="mailto:hamzahasan.dev@gmail.com"><i class="fa-solid fa-envelope"
+                  style="color:var(--primary);font-size:.875rem;"></i>&nbsp; hamzahasan.dev@gmail.com</a></li>
+            <li><a href="https://wa.me/923343368489" target="_blank" rel="noopener"><span
+                  style="color:var(--primary);font-size:.75rem;font-weight:700;">WA</span>&nbsp; +92 334 336 8489</a>
+            </li>
+            <li><span style="font-size:.875rem;color:var(--muted-fg);">Karachi, Pakistan</span></li>
+            <li style="margin-top:.5rem;"><a href="contact.html"
+                style="display:inline-block;padding:.625rem 1.25rem;border-radius:.375rem;background:rgba(99,102,241,.1);color:var(--primary);font-size:.875rem;font-weight:500;text-decoration:none;border:1px solid rgba(99,102,241,.2);">Start
+                a project →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="yr"></span> Hamza Web Solutions. All rights reserved.</p>
+        <p>Designed &amp; built by Muhammad Hamza Hasan</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
